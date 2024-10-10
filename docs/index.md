@@ -3,16 +3,16 @@
 <!--
 table of content
 -welcome page
--work
+-design work
 -outside design
 -about
 -->
 ### Navigation
 
 <!-- [Work](#work) -->
-<!-- [Outside design](#outsidedesign) -->
+<!-- [besides design](#besidesdesign) -->
 - [About](about.html)
-<!-- [Contact](#contact)-->
+
 
 ## Hi, I'm Enoch!
 ## A dedicated User Experience and Interaction Design student at Drexel University in Philadelphia
