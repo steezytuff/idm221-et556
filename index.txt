@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title -->
+    <title> Enoch's Design Portfolio</title>
+</head>
+
+<body>
+    <!-- header-->
+    <header>
+        Enoch Tuffour
+    </header>
+
+    <!-- 
+    table of content
+    <ul>
+        <li> welcome page </li>
+        <li> work </li>
+        <li> outside work</li>
+        <li> about </li>
+        <li> contact </li>
+    </ul>
+    -->
+
+   <!-- 
+    <nav>
+        <ul>
+            <li> work </li>
+            <li> outside work</li>
+            <li> about </li>
+            <li> contact </li>
+        </ul>
+    </nav>
+-->
+
+
+    <h1> Hi, I'm Enoch!</h1>
+    <h2> A dedicated User Experience and Interaction Design student at Drexel University in Philadelphia</h2>
+
+
+    
+</body>
+</html>
