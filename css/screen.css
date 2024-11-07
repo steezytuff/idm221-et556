@@ -1,0 +1,62 @@
+@font-face {
+    font-family: futura ;
+    src: url(../fonts/futura/);
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    /* height: auto;
+    width: 100%; */
+    filter: drop-shadow(0 8px 16px rgba (0,0,0, 0.6));
+}
+
+/* p {
+    margin: 0 auto;
+    max-wdth: 65ch; 
+} */
+
+html{
+    --red: #A72608;
+    --white: #E7E5E5;
+    --blue-gray: #767b91;
+    --dark-blue: #0b132b;
+    --black: #222222;
+
+    --color-background: var(--white);
+    --rhythm
+}
+
+header{
+    background-color: var(--black);
+    color: var(--white);
+    padding: 16px;
+    text-align: center;
+}
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-around;
+        background-color:  var(--black)
+    }
+
+    .project {
+        background-color: white;
+        margin-bottom: 15px;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+        img{
+
+        }
+    }
+
+
+

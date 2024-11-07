@@ -9,7 +9,7 @@ table of content
 -->
 ### Navigation
 
-- [Work](#work)
+- [Work](index.html)
 - [playground](playground.html)
 - [About](about.html)
 
