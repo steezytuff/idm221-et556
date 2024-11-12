@@ -1,12 +1,29 @@
 @font-face {
-    font-family: futura ;
-    src: url(../fonts/futura/);
+    font-family: 'futura', sans-serif;
+    --futura-light: src: url(../fonts/futura/futura\ light\ bt.ttf);
+    --futura-medium: src: url(../fonts/futura/futura\ medium\ bt.ttf);
+    --futura-book: src: url(../fonts/futura/Futura\ Book\ font.ttf);
+    --futura-bold: src: url(../fonts/futura/Futura\ Bold\ font.ttf);
     font-style: normal;
 }
 
-* {
-    box-sizing: border-box;
+html{
+    --red: #A72608;
+    --white: #E7E5E5;
+    --blue-gray: #767b91;
+    --beige: #D9D2C5;
+    --gray-black: #222222;
+    --black: #0a0a0a;
+
+
+    --color-background: var(--white);
+    color: var(--black);
+    padding: 20px;
 }
+
+/* * {
+    box-sizing: border-box;
+} */
 
 img {
     /* height: auto;
@@ -19,44 +36,54 @@ img {
     max-wdth: 65ch; 
 } */
 
-html{
-    --red: #A72608;
-    --white: #E7E5E5;
-    --blue-gray: #767b91;
-    --dark-blue: #0b132b;
-    --black: #222222;
-
-    --color-background: var(--white);
-    --rhythm
-}
-
+/* header */
 header{
-    background-color: var(--black);
+    background-color: var(--gray-black); 
     color: var(--white);
-    padding: 16px;
+    padding: 15px;
     text-align: center;
+
+    h1{
+        font-size: 1.5rem;
+        font-weight: 300;
+        margin-bottom: 10px;
+    }
 }
 
+/* nav */
     nav ul {
         list-style: none;
-        padding: 0;
-        margin: 0;
         display: flex;
-        justify-content: space-around;
-        background-color:  var(--black)
+        justify-content: space-around; 
+        font-family: var(--futura-bold);
+
+        a {
+            color: var(--red);
+            font-weight: 500;
+            text-decoration: none;
+            font-size: 1rem;
+          }
     }
 
+    main {
+        margin-top: 20px;
+      }
+
+
     .project {
-        background-color: white;
+        background-color: var(--beige);
         margin-bottom: 15px;
         padding: 15px;
         border-radius: 8px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-
-        img{
-
-        }
     }
+
+    /*.project img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+        margin-bottom: 5px;
+    } */
 
 
 
