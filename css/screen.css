@@ -1,4 +1,4 @@
-@font-face {
+ @font-face {
     font-family: 'futura', sans-serif;
     --futura-light: src: url(../fonts/futura/futura\ light\ bt.ttf);
     --futura-medium: src: url(../fonts/futura/futura\ medium\ bt.ttf);
@@ -11,6 +11,7 @@ html{
     --red: #A72608;
     --white: #E7E5E5;
     --blue-gray: #767b91;
+    --light-gray: #EBEBEB;
     --beige: #D9D2C5;
     --gray-black: #222222;
     --black: #0a0a0a;
@@ -18,6 +19,15 @@ html{
 
     --color-background: var(--white);
     color: var(--black);
+
+    
+}
+
+#work {
+    padding: 20px;
+}
+
+.body {
     padding: 20px;
 }
 
@@ -40,6 +50,7 @@ img {
 header{
     background-color: var(--gray-black); 
     color: var(--white);
+    margin: 0;
     padding: 15px;
     text-align: center;
 
@@ -71,11 +82,18 @@ header{
 
 
     .project {
-        background-color: var(--beige);
-        margin-bottom: 15px;
-        padding: 15px;
+        background-color: var(--light-gray);
+        margin: 15px;
+        padding: 20px;
         border-radius: 8px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        box-shadow : 0 2px 4px rgba(0, 0, 0, 0.2);
+     }
+
+    #intro {
+        background: rgb(118,123,145);
+        background: radial-gradient(circle, rgba(118,123,145,1) 0%, rgba(231,229,229,0.55) 100%);
+        text-align: center;
+        padding: 20px;
     }
 
     /*.project img {
