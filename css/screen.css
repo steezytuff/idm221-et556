@@ -1,11 +1,21 @@
  @font-face {
-    font-family: 'futura', sans-serif;
-    --futura-light: src: url(../fonts/futura/futura\ light\ bt.ttf);
-    --futura-medium: src: url(../fonts/futura/futura\ medium\ bt.ttf);
-    --futura-book: src: url(../fonts/futura/Futura\ Book\ font.ttf);
-    --futura-bold: src: url(../fonts/futura/Futura\ Bold\ font.ttf);
+    font-family: 'futura';
+    src: url(../fonts/futura/FuturaBook.ttf);
     font-style: normal;
+    font-display: swap;
+    font-weight: 100 900;
 }
+
+
+@font-face {
+    font-family: 'futurabold';
+    src: url(../fonts/futura/futur.ttf);
+    font-style: normal;
+    font-display: swap; 
+    font-weight: 100 900;
+    }
+
+
 
 html{
     --red: #A72608;
@@ -20,20 +30,32 @@ html{
     --color-background: var(--white);
     color: var(--black);
 
-    
+    --font: 'futura', Arial, sans-serif; 
+    --bold: 'futurabold', arial, sans-serif; 
 }
+
+body {
+    color: var(--black);
+    font-family: var(--font);
+
+    .body {
+        padding: 20px;
+    }
+
+    h1, h2, h3, h4{
+        font-family: var(--bold);
+      }
+  }
+
+  
 
 #work {
     padding: 20px;
 }
 
-.body {
-    padding: 20px;
-}
-
-/* * {
+* {
     box-sizing: border-box;
-} */
+} 
 
 img {
     /* height: auto;
@@ -41,40 +63,97 @@ img {
     filter: drop-shadow(0 8px 16px rgba (0,0,0, 0.6));
 }
 
-/* p {
-    margin: 0 auto;
-    max-wdth: 65ch; 
-} */
 
-/* header */
-header{
+
+
+header {
     background-color: var(--gray-black); 
     color: var(--white);
-    margin: 0;
-    padding: 15px;
-    text-align: center;
-
-    h1{
-        font-size: 1.5rem;
-        font-weight: 300;
-        margin-bottom: 10px;
+    padding: 1rem;
+    position: relative;
+  
+    label {
+      cursor: pointer;
+      height: 1.25rem;
+      position: fixed;
+      right: 1rem;
+      top: 1rem;
+      width: 1.625rem;
+      z-index: 1001;
+  
+      span {
+        background-color: var(--white);
+        border-radius: 2px;
+        display: block;
+        height: 3px;
+        position: absolute;
+        width: 100%;
+  
+        transform-origin: left;
+  
+        &:nth-child(1) {
+          top: 0;
+        }
+  
+        &:nth-child(2) {
+          top: 0.5rem;
+        }
+  
+        &:nth-child(3) {
+          top: 1rem;
+        }
+      }
     }
-}
+  }
 
 /* nav */
-    nav ul {
-        list-style: none;
-        display: flex;
-        justify-content: space-around; 
-        font-family: var(--futura-bold);
-
+nav {
+    background: var(--gray-black);
+    height: 100vh;
+    width: 18.75rem;
+    position: fixed;
+    right: -300px;
+    top: 0;
+    z-index: 1000;
+  
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 2rem;
+  
+      li {
+        margin-bottom: 1rem;
+  
         a {
-            color: var(--red);
-            font-weight: 500;
-            text-decoration: none;
-            font-size: 1rem;
-          }
+          color: var(--white);
+          font-family: var(--bold);
+          text-decoration: none;
+        }
+      }
     }
+  
+    
+  }
+  
+  /* Show nav when checkbox is checked */
+  .nav-toggle:checked ~ nav {
+    right: 0;
+  }
+  
+  .nav-toggle:checked ~ .nav-toggle-label span:nth-child(1) {
+    transform: rotate(45deg);
+    top: -2px; /* Fix */
+  }
+  
+  .nav-toggle:checked ~ .nav-toggle-label span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .nav-toggle:checked ~ .nav-toggle-label span:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+
+
 
     main {
         margin-top: 20px;
