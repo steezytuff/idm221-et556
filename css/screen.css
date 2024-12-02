@@ -21,6 +21,7 @@ html{
     --red: #A72608;
     --white: #E7E5E5;
     --blue-gray: #767b91;
+    --blue: #0e1afb;
     --light-gray: #EBEBEB;
     --beige: #D9D2C5;
     --gray-black: #222222;
@@ -170,6 +171,15 @@ nav {
         border-radius: 8px;
         box-shadow : 0 2px 4px rgba(0, 0, 0, 0.2);
 
+        a {
+          color: var(--blue);
+          font-family: var(--bold);
+        }
+
+        a:hover {
+          text-decoration: underline;
+        }
+
      }
 
      .project:hover {
@@ -213,11 +223,6 @@ footer {
   .social {
     margin-bottom: 1rem;
   
-    .social a {
-      display: inline-block;
-      margin: 0 0.5rem;
-      transition: transform 0.3s ease;
-    }
   
     a:hover {
       transform: scale(1.1);
