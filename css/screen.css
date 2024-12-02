@@ -169,7 +169,13 @@ nav {
         padding: 20px;
         border-radius: 8px;
         box-shadow : 0 2px 4px rgba(0, 0, 0, 0.2);
+
      }
+
+     .project:hover {
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+    }
+
 
     .intro {
         text-align: center;
@@ -184,6 +190,11 @@ nav {
           background: var(--red);
           padding: 15px;
           border-radius: 15px;
+
+        }
+
+        .cta:hover {
+          background: var(--blue-gray);
         }
     }
 
