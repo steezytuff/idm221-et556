@@ -77,7 +77,7 @@ img {
 
 
 
-
+/* header*/
 header {
   background: var(--gray-black);
   color: var(--white);
@@ -91,7 +91,7 @@ header {
   label {
     cursor: pointer;
     height: 1.25rem;
-    position: fixed;
+    position: absolute;
     right: 1rem;
     top: 2.2rem;
     width: 1.625rem;
@@ -124,7 +124,8 @@ header {
 /* nav */
 nav {
   background: var(--gray-black);
-  height: 100vh;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
   width: 18.75rem;
   position: fixed;
   right: -300px;
@@ -148,108 +149,98 @@ nav {
   }
 }
   
-  /* Show nav when checkbox is checked */
-  .nav-toggle:checked ~ nav {
-    right: 0;
+/* Show nav when checkbox is checked */
+.nav-toggle:checked ~ nav {
+  right: 0;
+}
+  
+.nav-toggle:checked ~ .nav-toggle-label span:nth-child(1) {
+  transform: rotate(45deg);
+  top: -2px; /* Fix */
+}
+  
+.nav-toggle:checked ~ .nav-toggle-label span:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-toggle:checked ~ .nav-toggle-label span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+
+
+.project {
+  background-color: var(--light-gray);
+  margin: 15px;
+  margin-top: 5px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow : 0 2px 4px rgba(0, 0, 0, 0.2);
+
+  a {
+    color: var(--blue);
+    font-family: var(--bold);
   }
   
-  .nav-toggle:checked ~ .nav-toggle-label span:nth-child(1) {
-    transform: rotate(45deg);
-    top: -2px; /* Fix */
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+.project:hover {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+.intro {
+  text-align: center;
+  color: var(--white);
+  background-image: url("../media/introbg\ copy.jpg");
+  padding: 20px;
+  padding-bottom: 40px;
+  
+  .cta {
+    text-decoration: none;
+    color: var(--white);
+    background: var(--red);
+    padding: 15px;
+    border-radius: 15px;
   }
   
-  .nav-toggle:checked ~ .nav-toggle-label span:nth-child(2) {
-    opacity: 0;
+  .cta:hover {
+    background: var(--blue-gray);
   }
+}
+
+
+/* Case study */
+.title {
+  text-align: center;
+  background: linear-gradient(to right, var(--red), var(--blue));
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* media */
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  padding: 20px;
   
-  .nav-toggle:checked ~ .nav-toggle-label span:nth-child(3) {
-    transform: rotate(-45deg);
+  .photo {
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: var(--white); 
+    text-align: center;
+    font-size: 12px;
   }
+}
 
-
-
-
-
-    
-    .project {
-        background-color: var(--light-gray);
-        margin: 15px;
-        margin-top: 5px;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow : 0 2px 4px rgba(0, 0, 0, 0.2);
-
-        a {
-          color: var(--blue);
-          font-family: var(--bold);
-        }
-
-        a:hover {
-          text-decoration: underline;
-        }
-
-     }
-
-     .project:hover {
-      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
-    }
-
-
-    .intro {
-        text-align: center;
-        color: var(--white);
-        background-image: url("../media/introbg\ copy.jpg");
-        padding: 20px;
-        padding-bottom: 40px;
-
-        .cta {
-          text-decoration: none;
-          color: var(--white);
-          background: var(--red);
-          padding: 15px;
-          border-radius: 15px;
-
-        }
-
-        .cta:hover {
-          background: var(--blue-gray);
-        }
-    }
-
-
-    /* Case study */
-    .title {
-      text-align: center;
-      background: linear-gradient(to right, var(--red), var(--blue));
-      color: white;
-      padding: 20px;
-      border-radius: 10px;
-      margin-bottom: 10px;
-    }
-
-
-    /* media */
-    .gallery {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 10px;
-      padding: 20px;
-
-      .photo {
-        position: relative;
-        border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        background: var(--white); 
-        text-align: center;
-        font-size: 12px;
-    }
-
-  }
-
-
-    /* Footer  */
+/* Footer  */
 footer {
-
   background-color: var(--white);
   color: var(--black);
   text-align: center;
