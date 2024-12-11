@@ -35,46 +35,6 @@ html{
     --bold: 'futurabold', arial, sans-serif; 
 }
 
-body {
-    color: var(--black);
-    font-family: var(--font);
-    line-height: 1.6;
-
-    .body {
-        padding: 20px;
-    }
-
-    h1, h2, h3, h4{
-        font-family: var(--bold);
-        margin-bottom: 0px;
-      }
-
-      h3{
-        padding-top: 20px;
-        padding-bottom: 0px;
-      }
-    
-  }
-
-  a {
-    text-decoration: none;
-    color: var(--black);
-  }
-
-#work {
-    padding: 20px;
-}
-
-* {
-    box-sizing: border-box;
-} 
-
-img {
-    height: auto;
-    width: 100%;
-    max-width: 600px;
-    filter: drop-shadow(0 8px 16px rgba (0,0,0, 0.6));
-}
 
 
 
@@ -169,6 +129,54 @@ nav {
 }
 
 
+/* body */
+body {
+  color: var(--black);
+  font-family: var(--font);
+  line-height: 1.6;
+  max-width: 900px;
+  
+
+  .body {
+      padding: 20px;
+  }
+
+  h1, h2, h3, h4{
+      font-family: var(--bold);
+      margin-bottom: 0px;
+    }
+
+    h3{
+      padding-top: 20px;
+      padding-bottom: 0px;
+    }
+  
+}
+
+
+/* links */
+a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+#work {
+  padding: 20px;
+  max-width: 900px;
+}
+
+* {
+  box-sizing: border-box;
+} 
+
+img {
+  height: auto;
+  width: 100%;
+  max-width: 600px;
+  filter: drop-shadow(0 8px 16px rgba (0,0,0, 0.6));
+}
+
+
 
 .project {
   background-color: var(--light-gray);
@@ -241,6 +249,52 @@ nav {
   }
 }
 
+
+/* About */
+.about {
+  padding: 20px;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .photo{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border-color: var(--red);
+    border-width: 5px;
+    border-style: solid;
+
+    img{
+      border-radius: 50%;
+    }
+  }
+
+  .skills {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    h3{
+      margin-bottom: 10px;
+    }
+  }
+  .skills span {
+    display: inline-block;
+    background: var(--red);
+    color: var(--white);
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin: 5px;
+  }
+
+  span:hover {
+    background: var(--blue)
+  }
+}
+
 /* Footer  */
 footer {
   background-color: var(--white);
@@ -251,11 +305,6 @@ footer {
 
   .social {
     margin-bottom: 1rem;
-  
-  
-    a:hover {
-      transform: scale(1.1);
-    }
   
     img {
       width: 24px;
