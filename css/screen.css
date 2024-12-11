@@ -305,7 +305,7 @@ img {
     }
 
   span:hover {
-    background: var(--blue)
+    background: var(--blue-gray);
   }
 }
 
