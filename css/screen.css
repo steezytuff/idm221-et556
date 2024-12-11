@@ -265,7 +265,7 @@ img {
   span{
     font-family: var(--bold);
   }
-}
+
 
 
   .photo{
@@ -307,6 +307,7 @@ img {
   span:hover {
     background: var(--blue-gray);
   }
+}
 }
 
 /* Footer  */
